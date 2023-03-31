@@ -1,32 +1,26 @@
-let menu=document.querySelector('#menu-bars');
-let header=document.querySelector('header');
+document.addEventListener('mousemove', function(e) {    //make colored cursor
+    var customCursor = document.getElementById('custom-cursor');
+    customCursor.style.left = e.clientX + 'px';
+    customCursor.style.top = e.clientY + 'px';
+  });
 
-menu.onclick=() =>{
-    menu.classList.toggle('fa-times');
-    menu.classList.toggle('active');
-}
-window.onscroll=()=>{
-    menu.classList.remove('fa-times');
-    header.classList.remove('active');
-}
+  
+  const toggleSwitch = document.querySelector('.toggle-switch');
+  const body = document.body;
+  
 
-let cursor1 =document.querySelector('.cursor-1');
-let cursor2=document.querySelector('cursor-2');
+var form = document.getElementById('form')    // get data for form submission in console
+ 
+  form.addEventListener('submit',function(event) {
+      event.preventDefault()
+      var name=document.getElementById('name').value
+      console.log(name)
 
-window.onmousemove =()=>{
-    cursor1.style.top=e.pageY + 'px';
-    cursor1.style.left=e.pageX + 'px';
-    cursor2.style.top=e.pageY + 'px';
-    cursor2.style.left=e.pageX + 'px';
-}
+      var email=document.getElementById('email').value
+      console.log(email)
 
-document.querySelectorAll('a').forEach(links =>{
-links.onmousecenter= () =>{
- cursor1.classList.add('active');
- cursor2.classList.add('active');
-}
-links.onmouseleave =()=>{
-    cursor1.classList.remove('active');
-     cursor2.classList.remove('active');
-}
-});
+      var textarea=document.getElementById('textarea').value
+      console.log(textarea)
+
+      
+  })
