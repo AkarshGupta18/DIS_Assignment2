@@ -1,6 +1,6 @@
-# DIS_Assignment2
+# Development_Project
 
-Here is my Project for DIS Assignment 2 on Making Perosnal Portfolio Website.
+Here is my Project i made on Personal Portfolio showing.
 
-Akarsh Gupta-2021307
+Akarsh Gupta
 
